@@ -1,0 +1,12 @@
+# ~/.config/helix/languages.toml
+[language-server.gpt]
+command = "helix-gpt"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[[language]]
+name = "python"
+language-servers = ["pyright","gpt"]
+
