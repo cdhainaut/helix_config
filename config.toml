@@ -2,10 +2,18 @@ theme="dark_plus"
 [editor]
 bufferline="always"		
 
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal."y"]
+"y" = ["extend_line","yank"]
+
 [keys.normal]
 "(" = "goto_prev_paragraph"
 ")" = "goto_next_paragraph"
-"Y" = ["extend_line","yank"]
+"G" = "goto_last_line"
 "0" = "goto_line_start"
 "V" = ["goto_line_start","select_mode"]
 "C-h" = "jump_view_left"
@@ -16,9 +24,10 @@ bufferline="always"
 [keys.select]
 "(" = "goto_prev_paragraph"
 ")" = "goto_next_paragraph"
-"Y" = ["extend_line","yank"]
+"G" = "goto_last_line"
 "0" = "goto_line_start"
 "C-h" = "jump_view_left"
 "C-l" = "jump_view_right"
 "C-k" = "jump_view_up"
 "C-j" = "jump_view_down"
+
